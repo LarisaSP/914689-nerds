@@ -7,7 +7,7 @@
   <body>
 <header class="main-header">
  <nav class="main-nav">
-          <img src="img/logo.svg" width="150" height="80" alt="Логотип нердс «Nerds»">
+          <img src="img/nerds-logo.svg" width="150" height="80" alt="Логотип нердс «Nerds»">
  
   <ul class="site-navigation">
   <li> <a href="studia.html"> Студия </a></li>
@@ -16,7 +16,7 @@
   <li> <a href="contacts.html"> Контакты </a></li>
   </ul>
   
-  <p class="box-link"> Корзина </p>
+  <a class="basket-link" href="basket.html"> Корзина </a>
   
  </nav>
 </header>
@@ -25,25 +25,59 @@
 <section>
    	<ul>
           <li class="red-item">
+		   <img src="img/illustration-1.svg" width="300" height="146" alt="picture">
             <h3>ВЕБ-САЙТЫ</h3>
             <p>Мир никода не будет прежним после того как увидит ваш сайт</p>
-			
           </li>
-		  <li class="red-link">Заказать</li>
+		  <a class="button" href="#">Заказать</a>
           <li class="green-item">
+		  <img src="img/illustration-2.svg" width="300" height="146" alt="picture">
             <h3>ПРИЛОЖЕНИЯ</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play.</p>
           </li>
-		  <li class="green-link">Заказать</li>
+		  <a class="button" href="#">Заказать</a>
           <li class="yellow-item">
+		  <img src="img/illustration-3.svg" width="300" height="146" alt="picture">
             <h3>ПРЕЗЕНТАЦИЯ</h3>
             <p>Вы даже не подозреваете насколько вы изумительны</p>
           </li>
-		  <li class="yellow-link">Заказать</li>
+		  <a class="button" href="#">Заказать</a>
     </ul>
 		
 	</section>
-<section>Карта</section> 
+
+
+<section class="appointmen">
+ <h2> Напишите нам </h2>
+  <form class="appointmen-form" action="form.html" method="post">
+  <p class="appointmen-item"> 
+    <label for="appointmen-name">Ваше имя: 
+	</label> 
+  </p>
+   <input id="appointmen-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+  <p class="appointmen-item"> 
+    <label for="appointmen-email">Ваш e-mail: 
+	</label>  
+  </p>
+   <input id="appointmen-email"type="text" name="email" value="" placeholder="email@example.com">
+  <p class="appointmen-item">
+    <label for="appointmen-comment"> Текст письма: 
+	</label> 
+  </p>
+   <input id="appointmen-comment" type="text" name="comment" value="" placeholder="В свободной форме"> </p>
+  <button class="button" type="submit"> Отправить 
+  </button>
+  <button class="modal-close" type="button"> Закрыть 
+  </button>
+  </form>
+</section> 
+
+<section class="modal-map">
+<h2 class="visually-hidden">Как до нас добраться </h2>
+
+ <img src="img/img-map.png" width="1440" height="416" alt="Офис компании по ул.Большая Конюшенная дом 19/8,Санкт-Петербург">
+
+</section>
 </main>
 
 <footer class="main-footer">
@@ -59,3 +93,6 @@
 	    
 	</body>
 </html>
+
+
+
