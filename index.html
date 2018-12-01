@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <header class="main-header">
- <nav class="main-nav">
+ <nav class="main-navigation">
+    <a class="main-header-logo">
           <img src="img/nerds-logo.svg" width="150" height="80" alt="Логотип нердс «Nerds»">
- 
+    </a>
+	
   <ul class="site-navigation">
   <li> <a href="studia.html"> Студия </a></li>
   <li> <a href="clients.html"> Клиенты </a></li>
@@ -49,7 +54,7 @@
 
 <section class="appointmen">
  <h2> Напишите нам </h2>
-  <form class="appointmen-form" action="form.html" method="post">
+  <form class="appointmen-form" action="https://form.html" method="post">
   <p class="appointmen-item"> 
     <label for="appointmen-name">Ваше имя: 
 	</label> 
@@ -64,7 +69,8 @@
     <label for="appointmen-comment"> Текст письма: 
 	</label> 
   </p>
-   <input id="appointmen-comment" type="text" name="comment" value="" placeholder="В свободной форме"> </p>
+   <textarea name="comment" id="appointmen-comment" rows="5" > В свободной форме </textarea>
+  </p>
   <button class="button" type="submit"> Отправить 
   </button>
   <button class="modal-close" type="button"> Закрыть 
