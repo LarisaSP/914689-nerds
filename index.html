@@ -9,29 +9,37 @@
   </head>
   <body>
 <header class="main-header">
- <nav class="main-navigation">
-    <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="150" height="80" alt="Логотип нердс «Nerds»">
-    </a>
-	
-  <ul class="site-navigation">
-  <li> <a href="studia.html"> Студия </a></li>
-  <li> <a href="clients.html"> Клиенты </a></li>
-  <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-  <li> <a href="contacts.html"> Контакты </a></li>
-  </ul>
-  
-  <ul class="site-navigation">
-  <a class="basket-link" href="basket.html"> Корзина </a>
-  </ul>
-  
- </nav>
+     <div class="container">
+     <div class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип нердс «Nerds»">
+     </div>
+     <nav class="main-navigation">
+	   <ul>
+         <li>
+     		 <a href="studia.html"> Студия </a>
+		 </li>
+         <li> 
+		     <a href="clients.html"> Клиенты </a>
+		 </li>
+         <li>
+		     <a href="catalog.html">Магазин</a>
+		 </li>
+         <li> 
+		     <a href="contacts.html"> Контакты </a>
+		 </li>
+       </ul>
+	 </nav>
+     <div class="basket">
+	   <a href="basket.html"> Корзина </a>
+	 </div>
+	</div> 
 </header>
-<main class="container">
 
-<section>Слайдер</section>
+    <main class="flex-container">
 
-<section>
+    <section>Слайдер</section>
+
+<div class="">
    	<ul class="feature-list">
           <li class="feature-item">
 		   <img src="img/illustration-1.svg" width="300" height="146" alt="picture">
@@ -39,70 +47,118 @@
             <p>Мир никода не будет прежним после того как увидит ваш сайт</p>
             <a class="red-button" href="http://website.ru">Заказать</a>
 		  </li>
-		  
           <li class="feature-item">
 		  <img src="img/illustration-2.svg" width="300" height="146" alt="picture">
             <h3>ПРИЛОЖЕНИЯ</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play.</p>
-            <a class="green-button" href="http://applic.ru">Заказать</a>
-		  </li>
-			
+			<a class="green-button" href="http://applic.ru">Заказать</a>
+          </li>
+		  
           <li class="feature-item">
 		  <img src="img/illustration-3.svg" width="300" height="146" alt="picture">
             <h3>ПРЕЗЕНТАЦИЯ</h3>
             <p>Вы даже не подозреваете насколько вы изумительны</p>
-            <a class="yellow-button" href="http://presentation.ru">Заказать</a>
-		  </li>
+			<a class="yellow-button" href="http://presentation.ru">Заказать</a>
+          </li>	  
     </ul>
-		
-</section>
-
-
-<section class="appointmen">
- <h2> Напишите нам </h2>
-  <form class="appointmen-form" action="https://form.html" method="post">
-  <p class="appointmen-item"> 
-    <label for="appointmen-name">Ваше имя: 
-	</label> 
-  </p>
-   <input id="appointmen-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-  <p class="appointmen-item"> 
-    <label for="appointmen-email">Ваш e-mail: 
-	</label>  
-  </p>
-   <input id="appointmen-email" type="text" name="email" value="" placeholder="email@example.com">
-  <p class="appointmen-item">
-    <label for="appointmen-comment"> Текст письма: 
-	</label> 
-  </p>
-   <textarea name="comment" id="appointmen-comment" rows="5" > В свободной форме </textarea>
-  </p>
-  <button class="button" type="submit"> Отправить 
-  </button>
-  <button class="modal-close" type="button"> Закрыть 
-  </button>
-  </form>
+	</div>	
 </section> 
-
+<hr/>
+<div class="about">
+			<div class="about-web">
+				<b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+				<div class="about-list">
+					<h3>ВЫПОЛНЯМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
+					<ul class="list-styled">
+						<li>
+							 Веб-сайтов любой сложности
+						</li>
+						<li>
+							 Мобильных приложений для iOS и Android
+						</li>
+						<li>
+							 Слайдшоу и видео для корпоративных презентаций
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="about-right">
+				<div class="about-logo">
+					<img src="img/nerds-illustration.png" width="360" height="220" alt="Nerds">
+				</div>
+				<div class="about-list">
+					<p>C 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
+				<table class="table">
+				    <tr>
+                        <th>146<sup>%</th>
+                        <th>100<sup>%</th>
+                        <th>50<sup>%</th>
+                    </tr>
+                    <tr class="row1">
+                        <td>Уровень самоотдачи</td>
+                        <td>Соблюдение сроков</td>
+                    <td>Минимальная предоплата</td>
+                    </tr>
+				</table>
+			</div>
+		</div>
+</div>
+</main>
 <section class="modal-map">
 <h2 class="visually-hidden">Как до нас добраться </h2>
 
- <img src="img/img-map.png" width="1440" height="416" alt="Офис компании по ул.Большая Конюшенная дом 19/8,Санкт-Петербург">
+ <img src="img/img-map.png" width="auto" height="416" alt="Офис компании по ул.Большая Конюшенная дом 19/8,Санкт-Петербург">
 
 </section>
-</main>
 
-<footer class="main-footer">
- <ul class="footer-social">
-  <li class="social-button" href="#"> Вконтакте</li>
-  <li class="social-button" href="#"> Фейсбук</li>
-  <li class="social-button" href="#"> Инстаграм</li>
- </ul>
- <div> <h2>Давайте дружить, это выгодно !</h2>
-<p> Скидка 10% для друзей их социальных сетей</p>
- </div>
-</footer>	 
-	    
+
+
+ <!-- <section class="modal modal-login">
+<h2> Напишите нам </h2>
+  <form class="appointmen-form" action="https://form.html" method="post">
+   <div class="appointmen-item"> 
+     <label for="appointmen-name">Ваше имя:
+    <input id="appointmen-name" type="text" name="name" value="" placeholder="Имя Фамилия"></label> 
+   
+   
+   <label for="appointmen-email">Ваш e-mail: 
+    <input id="appointmen-email" type="text" name="email" value="" placeholder="email@example.com">	</label> 
+   </div>
+    
+	<label for="appointmen-comment"> Текст письма: 
+	
+    <textarea  name="comment" id="appointmen-comment" rows="5" > В свободной форме </textarea> </label> 
+  
+  <button class="button" type="submit"> Отправить 
+  </button>
+  <button class="modal-close" type="button"> Закрыть 
+  </button> 
+  
+  </form> 
+  
+</section> !-->
+ 
+ <footer class="main-footer container">
+
+        <div class="social">
+          <a class="icon" href="#">
+            <span class="circle vk"></span>
+          </a>
+          <a class="icon" href="#">
+            <span class="circle fb"></span>
+          </a>
+          <a class="icon" href="#">
+            <span class="circle insta"></span>
+          </a>
+        </div>
+        <div class="footer-slogan">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+
+      </footer>
+	  	    
 	</body>
 </html>
 
